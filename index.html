@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASOSTENIBLE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -83,32 +84,51 @@
         </div>
     </section>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Escuela Territorio en Manchay, Perú</p>
-        <p>Proyectos Universitarios en Colombia</p>
-        <p>Agricultura Urbana en Comunidades de Colombia</p>
-    </section>
-
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Asesorías y acompañamiento en sostenibilidad ambiental, seguridad alimentaria, gestión territorial, y más.</p>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Teléfono: +51 944887798</p>
-        <p>Correo: asostenibleong@gmail.com</p>
-        <form>
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="correo" placeholder="Tu correo" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 ASOSTENIBLE. Todos los derechos reservados.</p>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +51 944887798</p>
+                <p><i class="fas fa-envelope"></i> asostenibleong@gmail.com</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="correo" placeholder="Tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+            
+            <div class="footer-section quick-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes">Quiénes Somos</a></li>
+                    <li><a href="#lineas">Líneas de Trabajo</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 ASOSTENIBLE. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="js/slider.js"></script>
 </body>
