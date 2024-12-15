@@ -792,3 +792,78 @@ footer {
         max-width: 350px;
     }
 }
+
+/* Estilos para la página de Líneas de Trabajo */
+#lineas-detalle {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linea-item {
+    margin-bottom: 60px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linea-item h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #4CAF50;
+}
+
+.linea-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.linea-content img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linea-info {
+    flex: 1;
+}
+
+.linea-info h3 {
+    color: #4CAF50;
+    font-size: 1.3em;
+    margin: 20px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.linea-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .linea-content {
+        flex-direction: column;
+    }
+
+    .linea-content img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .linea-info {
+        text-align: center;
+    }
+
+    .linea-item h2 {
+        text-align: center;
+    }
+}
