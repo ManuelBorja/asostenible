@@ -1121,3 +1121,18 @@ footer {
         padding: 20px;
     }
 }
+
+.linea-descripcion {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.linea-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.linea-info li {
+    margin-bottom: 8px;
+}
