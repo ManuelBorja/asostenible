@@ -1143,20 +1143,19 @@ footer {
     margin: 40px auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
 
 .document-card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+    padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    border-left: 5px solid #4CAF50;
 }
 
 .document-card:hover {
@@ -1165,22 +1164,37 @@ footer {
 }
 
 .document-icon {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #4CAF50;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.document-icon i {
+    background-color: #E8F5E9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.document-info {
+    flex: 1;
 }
 
 .document-info h3 {
-    color: #333;
+    color: #2E7D32;
     font-size: 1.4em;
     margin: 0 0 15px 0;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
 }
 
 .document-info p {
     color: #666;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-size: 0.95em;
 }
 
 .download-btn {
@@ -1189,18 +1203,22 @@ footer {
     gap: 8px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-top: auto;
+    width: fit-content;
 }
 
 .download-btn:hover {
     background-color: #45a049;
+    transform: translateY(-2px);
 }
 
 .download-btn i {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 @media (max-width: 768px) {
@@ -1210,6 +1228,29 @@ footer {
     }
     
     .document-card {
-        padding: 20px;
+        padding: 25px;
     }
+}
+
+/* Estilos para la sección hero de documentos */
+#proyectos-intro.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/documentos-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+#proyectos-intro .hero-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#proyectos-intro .hero-content p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
