@@ -3,51 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Documentos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-        }
-        .document {
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-        }
-        .document img {
-            max-width: 100%;
-            height: auto;
-        }
-        .document-title {
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Proyectos - ASOSTENIBLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Galería de Documentos</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes.html">Quiénes Somos</a>
+        <a href="lineas.html">Líneas de Trabajo</a>
+        <a href="proyectos.html" class="active">Proyectos</a>
+        <a href="servicios.html">Servicios</a>
+        <a class="active" href="documentos.html">Documentos</a>
+        <a href="#main-footer">Contacto</a>
+    </nav>
+    <section id="proyectos-intro" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Documentos y Ariculos</h1>
+                <p>Aquí podras encontrar los documentos y articulos publicados por la organización.</p>
+            </div>
+        </div>
+    </section>
     <div class="gallery">
         <div class="document">
-            <img src="documento1.png" alt="Documento 1">
+            <img src="docs/articulo_001.pdf" alt="Artículo 1">
             <div class="document-title">Documento 1</div>
         </div>
         <div class="document">
-            <img src="documento2.png" alt="Documento 2">
+            <img src="docs/articulo_002.pdf" alt="Artículo 2">
             <div class="document-title">Documento 2</div>
         </div>
         <div class="document">
-            <img src="documento3.png" alt="Documento 3">
+            <img src="docs/articulo_003.pdf" alt="Artículo 3">
             <div class="document-title">Documento 3</div>
         </div>
         <!-- Agrega más documentos según sea necesario -->
