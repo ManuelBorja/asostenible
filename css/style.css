@@ -132,16 +132,106 @@ nav {
     justify-content: center;
     background-color: #4CAF50;
     padding: 10px;
+    position: relative;
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover, nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Estilos para navegación móvil */
+.nav-toggle {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.nav-toggle i {
+    font-size: 1.4em;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+        background-color: #4CAF50;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #4CAF50;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    /* Ajustes específicos para iPhone SE y dispositivos similares */
+    @media (max-width: 375px) {
+        .hero-content h1 {
+            font-size: 2em;
+        }
+
+        .hero-content p {
+            font-size: 1em;
+        }
+
+        header .btn {
+            font-size: 0.9em;
+            padding: 8px 16px;
+            margin: 5px;
+        }
+
+        .values div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .linea-card {
+            max-width: 100%;
+        }
+    }
 }
 
 section {
